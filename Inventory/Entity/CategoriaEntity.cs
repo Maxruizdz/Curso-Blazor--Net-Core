@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Inventory.Entity.obj;
+using System.ComponentModel.DataAnnotations;
 
 namespace Inventory.Entity
 {
@@ -12,6 +13,6 @@ namespace Inventory.Entity
 
         public string CategoriaName { get; set; }
 
-
+        public ICollection<ProductEntity> Products { get; set; }
     }
 }

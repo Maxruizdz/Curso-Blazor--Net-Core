@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Inventory.Entity.obj;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace Inventory.Entity
 {
@@ -19,5 +21,15 @@ namespace Inventory.Entity
         [Required]
         [StringLength(50)]
         public string WherehouseId { get; set; }
+
+        public WherehouseEntity wherehouse { get; set; }
+
+
+
+        public ProductEntity Product { get; set; }
+
+
+
+        public ICollection<InOutEntity> Inout { get; set; }
     }
 }

@@ -13,5 +13,9 @@ namespace Inventory.Entity
         [Required]
         [StringLength(200)]
         public string WherehouseAddress { get; set; }
+
+
+
+        public ICollection<StorageEntity> Storages { get; set; }
     }
 }

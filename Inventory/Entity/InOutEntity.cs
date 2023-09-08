@@ -16,5 +16,8 @@ namespace Inventory.Entity
         [Required] 
         [StringLength(50)]
         public string StorageId { get; set; }
+
+
+        public StorageEntity Storage { get; set; }
     }
 }

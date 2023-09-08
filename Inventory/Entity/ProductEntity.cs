@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace Inventory.Entity.obj
 {
@@ -16,6 +17,13 @@ namespace Inventory.Entity.obj
         public string ProductDescription { get; set; }
 
         public int TotalQuality { get; set; }
+
+       public string CategoryId { get; set; }
+
+        public CategoriaEntity Categoria { get; set; }
+
+
+        public ICollection<StorageEntity> storageEntities { get; set; }
 
         
     }
