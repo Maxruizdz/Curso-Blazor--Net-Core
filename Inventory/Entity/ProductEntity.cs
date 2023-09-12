@@ -15,7 +15,6 @@ namespace Inventory.Entity.obj
         [StringLength(600)]
 
         public string ProductDescription { get; set; }
-
         public int TotalQuality { get; set; }
 
        public string CategoryId { get; set; }
