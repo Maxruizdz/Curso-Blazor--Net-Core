@@ -21,12 +21,10 @@ namespace Inventory.DataAccess
         public DbSet<WherehouseEntity> wherehouseEntities { get; set; }
 
 
-        public InventaryContext(DbContextOptions<InventaryContext> options) : base(options) {
-
-
+      
 
             
-        }
+        
 
 
         protected override void OnModelCreating(ModelBuilder modelbuilder) {
