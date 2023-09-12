@@ -1,7 +1,10 @@
 ﻿using Inventory.Entity;
 using Inventory.Entity.obj;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 
 namespace Inventory.DataAccess
@@ -18,27 +21,19 @@ namespace Inventory.DataAccess
 
 
         public InventaryContext(DbContextOptions<InventaryContext> options) : base(options) {
-        
-        
-        
-        
+
+
+
+            
         }
 
 
         protected override void OnModelCreating(ModelBuilder modelbuilder) {
-
-
-
-
-
-
-
             modelbuilder.Entity<ProductEntity>(producto =>
             {
-               
 
-
-            });
+              
+        });
         
         
         
@@ -49,6 +44,8 @@ namespace Inventory.DataAccess
         
         
         }
+
+     
 
     }
 }

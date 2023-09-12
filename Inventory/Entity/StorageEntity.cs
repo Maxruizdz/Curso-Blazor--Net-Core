@@ -10,7 +10,7 @@ namespace Inventory.Entity
 
 
         [Key]
-        [StringLength(50)]
+
         public string StorageId { get; set; }
         public DateTime LastUpdate { get; set; }
         [Required]
@@ -19,7 +19,7 @@ namespace Inventory.Entity
         [StringLength(10)]
         public string ProductId { get; set; }
         [Required]
-        [StringLength(50)]
+       
         public string WherehouseId { get; set; }
 
         public WherehouseEntity wherehouse { get; set; }

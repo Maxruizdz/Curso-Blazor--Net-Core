@@ -1,0 +1,8 @@
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.RazorAssemblyInfo.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory - Backup.RazorAssemblyInfo.cs

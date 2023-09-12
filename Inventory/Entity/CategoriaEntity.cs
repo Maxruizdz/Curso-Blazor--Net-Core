@@ -6,7 +6,7 @@ namespace Inventory.Entity
     public class CategoriaEntity
     {
         [Key]
-        [StringLength(50)]
+        
 
         public string CategoriaId { get; set; }
 

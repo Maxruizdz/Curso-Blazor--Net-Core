@@ -5,7 +5,7 @@ namespace Inventory.Entity
     public class WherehouseEntity
     {
         [Key]
-        [StringLength(50)]
+        
         public string WherehouseId { get; set; }
         [Required]
         [StringLength(100)]

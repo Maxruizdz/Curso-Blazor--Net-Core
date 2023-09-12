@@ -6,7 +6,7 @@ namespace Inventory.Entity.obj
     public class ProductEntity
     {
         [Key]
-        [StringLength(50)]
+        [StringLength(10)]
         public string ProductId { get; set; }
 
         [Required]

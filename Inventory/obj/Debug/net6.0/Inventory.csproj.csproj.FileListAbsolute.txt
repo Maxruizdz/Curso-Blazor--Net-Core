@@ -1,0 +1,8 @@
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.RazorAssemblyInfo.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Inventory\obj\Debug\net6.0\Inventory.csproj.RazorAssemblyInfo.cs
