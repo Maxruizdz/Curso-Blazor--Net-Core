@@ -4,9 +4,9 @@ using Inventory.Entity.obj;
 
 namespace Inventory.Business
 {
-    public class B_Product
+    public static class B_Product
     {
-        public List<ProductEntity> Get()
+        public static List<ProductEntity> Get()
         {
 
             using (var db = new InventaryContext())
@@ -22,7 +22,7 @@ namespace Inventory.Business
         }
 
 
-        public void Create (ProductEntity product)
+        public static void Create (ProductEntity product)
         {
 
             using (var db = new InventaryContext())
@@ -38,7 +38,7 @@ namespace Inventory.Business
         }
 
 
-        public void Update(ProductEntity product)
+        public static void Update(ProductEntity product)
         {
 
 
@@ -54,7 +54,7 @@ namespace Inventory.Business
 
 
         }
-        public void Delete(ProductEntity product)
+        public static void Delete(ProductEntity product)
         {
 
 

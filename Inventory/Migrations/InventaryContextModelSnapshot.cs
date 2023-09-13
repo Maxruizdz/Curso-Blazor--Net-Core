@@ -139,13 +139,13 @@ namespace Inventory.Migrations
                     b.HasData(
                         new
                         {
-                            WherehouseId = "a3ea7dd7-b947-4ff0-ae67-028346775ffa",
+                            WherehouseId = "706b0c76-21b0-4e4c-a0c6-1f76faf8763e",
                             WherehouseAddress = "Calle 8 con 2",
                             WherehouseName = "Bodega Central"
                         },
                         new
                         {
-                            WherehouseId = "60b3cb83-47d3-40ee-aed0-ffc58e427ba1",
+                            WherehouseId = "85fac55e-31b5-4d9b-a2a1-675870dc7bed",
                             WherehouseAddress = "Calle 6 con 47",
                             WherehouseName = "Bodega Norte"
                         });

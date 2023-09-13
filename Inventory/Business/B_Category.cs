@@ -4,11 +4,11 @@ using Inventory.Entity;
 
 namespace Inventory.Business
 {
-    public class B_Category
+    public static class B_Category
     {
 
        
-        public List<CategoriaEntity> cattegoria() {
+        public static List<CategoriaEntity> cattegoria() {
 
             using (var db = new InventaryContext()) { 
             
@@ -22,7 +22,7 @@ namespace Inventory.Business
         }
 
 
-        public void Create_category(CategoriaEntity Ocategory) {
+        public static void Create_category(CategoriaEntity Ocategory) {
 
             using (var db= new InventaryContext()) {
             
@@ -36,7 +36,7 @@ namespace Inventory.Business
         }
 
 
-        public void Update(CategoriaEntity Ocategory) {
+        public static void Update(CategoriaEntity Ocategory) {
 
 
             using (var db = new InventaryContext()) { 
@@ -50,7 +50,7 @@ namespace Inventory.Business
         
         
         }
-        public void Delete(CategoriaEntity categoriaEntity)
+        public static  void Delete(CategoriaEntity categoriaEntity)
         {
 
 

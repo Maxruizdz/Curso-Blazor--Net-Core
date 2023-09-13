@@ -1,0 +1,53 @@
+﻿@using Inventory.Business;
+@using Inventory.Entity.obj;
+@using Inventory.Entity;
+
+
+
+
+
+<div>
+    <EditForm Model="oProduct">
+        <div class="form-group">
+            <label>Referencia:</label>
+            <InputText @bind-Value="oProduct.ProductId" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Nombre del producto:</label>
+            <InputText @bind-Value="oProduct.ProductName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Descripción:</label>
+            <InputTextArea @bind-Value="oProduct.ProductDescription" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Categoría:</label>
+            <InputSelect @bind-Value="oProduct.CategoryId" class="form-control">
+                <option value="">Seleccionar categoría..</option>
+                @foreach (var category in categorias)
+                { 
+                        <option value=@category.CategoriaId >@category.CategoriaName</option>
+                }
+            </InputSelect>
+        </div>
+
+        <input type="button" value="Agregar Producto" @onclick=SaveProduct />
+    </EditForm>
+</div>
+
+@code {
+    
+    ProductEntity oProduct = new ProductEntity();
+    List<CategoriaEntity> categorias = new List<CategoriaEntity>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        categorias = B_Category.cattegoria();
+    }
+
+    private void SaveProduct()
+    {
+        B_Product.Create(oProduct);
+
+    }
+}

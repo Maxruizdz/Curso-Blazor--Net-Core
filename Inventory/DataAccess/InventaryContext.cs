@@ -21,10 +21,15 @@ namespace Inventory.DataAccess
         public DbSet<WherehouseEntity> wherehouseEntities { get; set; }
 
 
-      
 
-            
-        
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            if (!options.IsConfigured)
+            {
+                options.UseSqlServer("Data Source=MAXI\\MAXIIII;Initial Catalog=Inventorydb;user id=sa;password=Mirotimi01;TrustServerCertificate=True;");
+            }
+        }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelbuilder) {

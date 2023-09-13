@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Inventory.Migrations
 {
     [DbContext(typeof(InventaryContext))]
-    [Migration("20230912004434_MIFirstMigrations")]
+    [Migration("20230913002721_MIFirstMigrations")]
     partial class MIFirstMigrations
     {
         /// <inheritdoc />
@@ -37,6 +37,33 @@ namespace Inventory.Migrations
                     b.HasKey("CategoriaId");
 
                     b.ToTable("categoriaEntities");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoriaId = "ASH",
+                            CategoriaName = "Aseo Hogar"
+                        },
+                        new
+                        {
+                            CategoriaId = "ASP",
+                            CategoriaName = "Aseo Personal"
+                        },
+                        new
+                        {
+                            CategoriaId = "HGR",
+                            CategoriaName = "Hogar"
+                        },
+                        new
+                        {
+                            CategoriaId = "PRF",
+                            CategoriaName = "Perfumeria"
+                        },
+                        new
+                        {
+                            CategoriaId = "SLD",
+                            CategoriaName = "Salud"
+                        });
                 });
 
             modelBuilder.Entity("Inventory.Entity.InOutEntity", b =>
@@ -111,6 +138,20 @@ namespace Inventory.Migrations
                     b.HasKey("WherehouseId");
 
                     b.ToTable("wherehouseEntities");
+
+                    b.HasData(
+                        new
+                        {
+                            WherehouseId = "706b0c76-21b0-4e4c-a0c6-1f76faf8763e",
+                            WherehouseAddress = "Calle 8 con 2",
+                            WherehouseName = "Bodega Central"
+                        },
+                        new
+                        {
+                            WherehouseId = "85fac55e-31b5-4d9b-a2a1-675870dc7bed",
+                            WherehouseAddress = "Calle 6 con 47",
+                            WherehouseName = "Bodega Norte"
+                        });
                 });
 
             modelBuilder.Entity("Inventory.Entity.obj.ProductEntity", b =>

@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Inventory.Migrations
 {
     /// <inheritdoc />
@@ -103,6 +105,27 @@ namespace Inventory.Migrations
                         principalTable: "storageEntities",
                         principalColumn: "StorageId",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "categoriaEntities",
+                columns: new[] { "CategoriaId", "CategoriaName" },
+                values: new object[,]
+                {
+                    { "ASH", "Aseo Hogar" },
+                    { "ASP", "Aseo Personal" },
+                    { "HGR", "Hogar" },
+                    { "PRF", "Perfumeria" },
+                    { "SLD", "Salud" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "wherehouseEntities",
+                columns: new[] { "WherehouseId", "WherehouseAddress", "WherehouseName" },
+                values: new object[,]
+                {
+                    { "706b0c76-21b0-4e4c-a0c6-1f76faf8763e", "Calle 8 con 2", "Bodega Central" },
+                    { "85fac55e-31b5-4d9b-a2a1-675870dc7bed", "Calle 6 con 47", "Bodega Norte" }
                 });
 
             migrationBuilder.CreateIndex(
