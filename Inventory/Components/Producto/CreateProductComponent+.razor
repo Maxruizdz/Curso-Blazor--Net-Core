@@ -3,7 +3,7 @@
 @using Inventory.Entity;
 
 
-
+@inject NavigationManager navManager
 
 
 <div>
@@ -36,7 +36,7 @@
 </div>
 
 @code {
-    
+
     ProductEntity oProduct = new ProductEntity();
     List<CategoriaEntity> categorias = new List<CategoriaEntity>();
 
@@ -48,6 +48,7 @@
     private void SaveProduct()
     {
         B_Product.Create(oProduct);
+        navManager.NavigateTo("product/list");
 
     }
 }
