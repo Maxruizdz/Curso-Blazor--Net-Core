@@ -1,17 +1,5 @@
-﻿@using Inventory.Business;
-@using Inventory.Entity.obj;
-@using Inventory.Entity;
-
-
-@inject NavigationManager navManager
-
-
-<div>
+﻿<div>
     <EditForm Model="oProduct">
-        <div class="form-group">
-            <label>Referencia:</label>
-            <InputText @bind-Value="oProduct.ProductId" class="form-control" />
-        </div>
         <div class="form-group">
             <label>Nombre del producto:</label>
             <InputText @bind-Value="oProduct.ProductName" class="form-control" />
@@ -25,8 +13,8 @@
             <InputSelect @bind-Value="oProduct.CategoryId" class="form-control">
                 <option value="">Seleccionar categoría..</option>
                 @foreach (var category in categorias)
-                { 
-                        <option value=@category.CategoriaId >@category.CategoriaName</option>
+                {
+                    <option value=@category.CategoriaId>@category.CategoriaName</option>
                 }
             </InputSelect>
         </div>
@@ -52,3 +40,5 @@
 
     }
 }
+
+
