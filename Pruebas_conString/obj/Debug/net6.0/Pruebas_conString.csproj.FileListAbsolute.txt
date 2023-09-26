@@ -1,0 +1,14 @@
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\bin\Debug\net6.0\Pruebas_conString.exe
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\bin\Debug\net6.0\Pruebas_conString.deps.json
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\bin\Debug\net6.0\Pruebas_conString.runtimeconfig.json
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\bin\Debug\net6.0\Pruebas_conString.dll
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\bin\Debug\net6.0\Pruebas_conString.pdb
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\Pruebas_conString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\Pruebas_conString.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\Pruebas_conString.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\Pruebas_conString.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\Pruebas_conString.dll
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\refint\Pruebas_conString.dll
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\Pruebas_conString.pdb
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\Pruebas_conString.genruntimeconfig.cache
+C:\Users\usuario\Desktop\Curso_Blazor\Pruebas_conString\obj\Debug\net6.0\ref\Pruebas_conString.dll

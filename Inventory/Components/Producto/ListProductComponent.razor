@@ -1,0 +1,45 @@
+﻿@using Entity.obj
+@using Business
+
+
+<table class="table table-hover table-bordered"> 
+    <thead>
+
+
+        <tr>
+            <th>Referencia</th>
+            <th>Nombre Producto</th>
+            <th> Categoria</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var product in Get_products)
+        {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.ProductName</td>
+                <td>@product.CategoryId</td>
+
+
+
+            </tr>
+        
+        }
+    </tbody>
+
+
+</table>
+
+@code {
+
+    List <ProductEntity> Get_products= new List<ProductEntity>();
+
+    protected override async  Task OnInitializedAsync()
+    {
+        Get_products = B_Product.Get();
+
+     
+    }
+}
