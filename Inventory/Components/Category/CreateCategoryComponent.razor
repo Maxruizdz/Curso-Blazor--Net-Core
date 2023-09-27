@@ -1,0 +1,32 @@
+﻿@using Entity.obj
+@using Inventory.Entity;
+@using Inventory.Business
+<div>
+    <EditForm Model="Ocategory">
+        <div class="form-group">
+            <label>Referencia:</label>
+            <InputText @bind-Value="Ocategory.CategoriaId" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Nombre de la Categoria:</label>
+            <InputText @bind-Value="Ocategory.CategoriaName" class="form-control" />
+     
+
+        
+            <input type="button" value="Agregar Categoria" @onclick=SaveProduct />
+
+            </div>
+    </EditForm>
+</div>
+
+@code {
+    CategoriaEntity Ocategory = new CategoriaEntity();
+
+
+
+    public void SaveProduct()
+    {
+
+        B_Category.Create_category(Ocategory);
+    }
+}
