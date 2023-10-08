@@ -1,6 +1,8 @@
 ﻿@using Entity.obj
 @using Inventory.Entity;
 @using Inventory.Business
+
+@inject NavigationManager navManager
 <div>
     <EditForm Model="Ocategory">
         <div class="form-group">
@@ -28,5 +30,6 @@
     {
 
         B_Category.Create_category(Ocategory);
+        navManager.NavigateTo("/categoria/list");
     }
 }
