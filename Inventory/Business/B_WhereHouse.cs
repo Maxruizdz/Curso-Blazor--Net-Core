@@ -4,9 +4,9 @@ using Inventory.Entity.obj;
 
 namespace Inventory.Business
 {
-    public class B_WhereHouse
+    public static class B_WhereHouse
     {
-        public List<WherehouseEntity> Get()
+        public static List<WherehouseEntity> Get()
         {
 
             using (var db = new InventaryContext())
@@ -22,7 +22,7 @@ namespace Inventory.Business
         }
 
 
-        public void Create(WherehouseEntity wherehouse)
+        public static void Create(WherehouseEntity wherehouse)
         {
 
             using (var db = new InventaryContext())
@@ -38,7 +38,7 @@ namespace Inventory.Business
         }
 
 
-        public void Update(WherehouseEntity wherehouse)
+        public static void Update(WherehouseEntity wherehouse)
         {
 
 
@@ -54,7 +54,7 @@ namespace Inventory.Business
 
 
         }
-        public void Delete(WherehouseEntity wherehouse)
+        public static void Delete(WherehouseEntity wherehouse)
         {
 
 

@@ -1,0 +1,40 @@
+﻿@using Inventory.Business;
+@using Inventory.Entity.obj;
+@using Inventory.Entity.obj;
+@using Inventory.Entity;
+
+
+@inject NavigationManager navManager
+
+
+<div>
+    <EditForm Model="Wherehouse">
+        <div class="form-group">
+            <label>Referencia:</label>
+            <InputText @bind-Value="Wherehouse.WherehouseId" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Nombre de la bodega:</label>
+            <InputText @bind-Value="Wherehouse.WherehouseName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Direccion de la Bodega:</label>
+            <InputTextArea @bind-Value="Wherehouse.WherehouseAddress" class="form-control" />
+        </div>
+        
+
+        <input type="button" value="Crar Bodega" @onclick=SaveProduct />
+    </EditForm>
+</div>
+
+@code {
+    WherehouseEntity Wherehouse = new WherehouseEntity();
+
+
+
+    private void SaveProduct()
+    {
+       B_WhereHouse.
+
+    }
+}
