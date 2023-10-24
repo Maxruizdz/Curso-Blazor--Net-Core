@@ -1,0 +1,64 @@
+﻿@using Entity.obj
+@using Business
+@using Inventory.Entity;
+
+<table class="table table-hover table-bordered">
+    <thead>
+
+
+        <tr>
+            <th>Referencia</th>
+            <th>Nombre de la Bodega</th>
+            <th>Direccion</th>
+
+
+
+
+        </tr>
+    </thead>
+
+
+    <tbody>
+
+        @foreach (var wherehouse in wherehouseEntity)
+        {
+            <tr>
+                <td>@wherehouse.WherehouseId</td>
+                <td>@wherehouse.WherehouseName</td>
+                <td>@wherehouse.WherehouseAddress</td>
+
+                
+                    <th><a href="/wherehouse/update/@wherehouse.WherehouseId">Editar</a></th>
+                
+
+
+
+            </tr>
+
+        }
+    </tbody>
+
+
+</table>
+
+@code {
+    List<WherehouseEntity> wherehouseEntity = new List<WherehouseEntity>();
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        wherehouseEntity = B_WhereHouse.Get();
+    }
+
+
+
+
+
+
+}
+@code {
+
+}
