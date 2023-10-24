@@ -9,10 +9,7 @@
 
 <div>
     <EditForm Model="Wherehouse">
-        <div class="form-group">
-            <label>Referencia:</label>
-            <InputText @bind-Value="Wherehouse.WherehouseId" class="form-control" />
-        </div>
+       
         <div class="form-group">
             <label>Nombre de la bodega:</label>
             <InputText @bind-Value="Wherehouse.WherehouseName" class="form-control" />
@@ -34,7 +31,10 @@
 
     private void SaveProduct()
     {
-       B_WhereHouse.
 
+
+        Wherehouse.WherehouseId = Guid.NewGuid().ToString();
+        B_WhereHouse.Create(Wherehouse);
+        navManager.NavigateTo("list/Wherehouse");
     }
 }

@@ -70,6 +70,24 @@ namespace Inventory.Business
         }
 
 
+        public static CategoriaEntity buscar_categoria(string categoria_id) {
+
+
+            using (var db = new InventaryContext()) {
+
+
+
+
+                return db.categoriaEntities.Where(p => p.CategoriaId == categoria_id).FirstOrDefault();
+            
+            }
+        
+        
+        
+        
+        }
+
+
 
     }
 }

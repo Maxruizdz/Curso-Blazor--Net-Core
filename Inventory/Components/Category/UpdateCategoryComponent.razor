@@ -1,0 +1,38 @@
+﻿@using Inventory.Business;
+@using Inventory.Entity.obj;
+@using Inventory.Entity;
+
+
+@inject NavigationManager navManager
+
+<div>
+    <EditForm Model="categoria">
+        
+        <div class="form-group">
+            <label>Nombre de la categoria</label>
+            <InputTextArea @bind-Value="categoria.CategoriaName" class="form-control" />
+        </div>
+      
+        <input type="button" value="Modificar Categoria" @onclick=Update />
+    </EditForm>
+</div>
+
+@code {
+    [Parameter]
+    public String Id_categoria { get; set; }
+
+    CategoriaEntity categoria = new CategoriaEntity();
+
+    protected override async Task OnInitializedAsync()
+    {
+        categoria = B_Category.buscar_categoria(Id_categoria);
+
+    }
+
+    private void Update()
+    {
+        B_Category.Update(categoria);
+        navManager.NavigateTo("categoria/list");
+
+    }
+}

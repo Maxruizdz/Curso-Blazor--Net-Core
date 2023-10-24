@@ -1,0 +1,15 @@
+﻿@page "/product/update/{id_product}"
+
+<UpdateProductComponent Id_producto="@id_product"></UpdateProductComponent>
+
+
+@code {
+    [Parameter]
+    public string id_product { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        id_product = id_product;
+    }
+
+}

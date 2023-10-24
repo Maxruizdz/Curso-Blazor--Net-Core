@@ -20,6 +20,18 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Components/Category/CreateCategoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXRlZ29yeVxDcmVhdGVDYXRlZ29yeUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Components/Category/ListCategoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXRlZ29yeVxMaXN0Q2F0ZWdvcnlDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Components/Category/UpdateCategoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXRlZ29yeVxVcGRhdGVDYXRlZ29yeUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Components/Ejercicios/BlazorPages/Form001.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFamVyY2ljaW9zXEJsYXpvclBhZ2VzXEZvcm0wMDEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +56,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xXaGVyZUhvdXNlXENyZWF0ZVdoZXJlSG91c2VDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Components/WhereHouse/ListWhereHouseComponet.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xXaGVyZUhvdXNlXExpc3RXaGVyZUhvdXNlQ29tcG9uZXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Components/WhereHouse/UpdateWhereHouseComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xXaGVyZUhvdXNlXFVwZGF0ZVdoZXJlSG91c2VDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/Category/CreateCategoryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcQ3JlYXRlQ2F0ZWdvcnlQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/Category/ListCategoryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcTGlzdENhdGVnb3J5UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/Category/UpdateCategoryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcVXBkYXRlQ2F0ZWdvcnlQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +94,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/Products/ListProductPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcTGlzdFByb2R1Y3RQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/Products/UpdateProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcVXBkYXRlUHJvZHVjdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/WhereHouse/CreateWhereHousePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2hlcmVIb3VzZVxDcmVhdGVXaGVyZUhvdXNlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/WhereHouse/ListWhereHousePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2hlcmVIb3VzZVxMaXN0V2hlcmVIb3VzZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/WhereHouse/UpdateWhereHousePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2hlcmVIb3VzZVxVcGRhdGVXaGVyZUhvdXNlUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Shared/SurveyPrompt.razor]
