@@ -54,6 +54,21 @@ namespace Inventory.Business
 
 
         }
+
+
+        public static ProductEntity product(string id_product) {
+            using (var db = new InventaryContext()) {
+
+
+                return db.productEntities.Where(p=>p.ProductId == id_product).FirstOrDefault();
+            
+            
+            }
+        
+        
+        
+        
+        }
         public static void Delete(ProductEntity product)
         {
 

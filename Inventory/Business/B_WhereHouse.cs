@@ -73,6 +73,24 @@ namespace Inventory.Business
 
 
         }
+        public static WherehouseEntity buscar_wherehouse(string wherehouse_id)
+        {
+
+
+            using (var db = new InventaryContext())
+            {
+
+
+
+
+                return db.wherehouseEntities.Where(p => p.WherehouseId == wherehouse_id).FirstOrDefault();
+
+            }
+
+
+
+
+        }
     }
 
 

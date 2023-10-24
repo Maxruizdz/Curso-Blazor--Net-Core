@@ -1,4 +1,11 @@
-﻿<div>
+﻿@using Inventory.Business;
+@using Inventory.Entity.obj;
+@using Inventory.Entity;
+
+
+@inject NavigationManager navManager
+
+<div>
     <EditForm Model="oProduct">
         <div class="form-group">
             <label>Nombre del producto:</label>
@@ -19,24 +26,27 @@
             </InputSelect>
         </div>
 
-        <input type="button" value="Agregar Producto" @onclick=SaveProduct />
+        <input type="button" value="Modificar Producto" @onclick=UpdateProduct />
     </EditForm>
 </div>
 
 @code {
-
+    [Parameter]
+    public String Id_producto { get; set; }
     ProductEntity oProduct = new ProductEntity();
     List<CategoriaEntity> categorias = new List<CategoriaEntity>();
 
     protected override async Task OnInitializedAsync()
     {
         categorias = B_Category.cattegoria();
+
+        oProduct = B_Product.product(Id_producto);
     }
 
-    private void SaveProduct()
+    private void UpdateProduct()
     {
-        B_Product.Create(oProduct);
-        navManager.NavigateTo("");
+        B_Product.Update(oProduct);
+        navManager.NavigateTo("product/list");
 
     }
 }
