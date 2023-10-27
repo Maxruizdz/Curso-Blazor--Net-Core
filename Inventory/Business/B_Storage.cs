@@ -4,9 +4,9 @@ using Inventory.Entity.obj;
 
 namespace Inventory.Business
 {
-    public class B_Storage
+    public static class B_Storage
     {
-        public List<StorageEntity> Get()
+        public  static List<StorageEntity> Get()
         {
 
             using (var db = new InventaryContext())
@@ -22,7 +22,7 @@ namespace Inventory.Business
         }
 
 
-        public void Create(StorageEntity storage)
+        public static void Create(StorageEntity storage)
         {
 
             using (var db = new InventaryContext())
@@ -38,7 +38,7 @@ namespace Inventory.Business
         }
 
 
-        public void Update(StorageEntity storage)
+        public static void Update(StorageEntity storage)
         {
 
 
@@ -54,7 +54,7 @@ namespace Inventory.Business
 
 
         }
-        public void Delete(StorageEntity storageEntity)
+        public static void Delete(StorageEntity storageEntity)
         {
 
 

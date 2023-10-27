@@ -1,0 +1,55 @@
+﻿@using Entity.obj
+@using Business
+@using Inventory.Entity;
+<EditForm Model="@oStorage">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label for="categories">Bodega:</label>
+        <InputSelect id="wherehouses" @bind-Value="oStorage.WherehouseId" class="form-control">
+            <option value="">Seleccionar bodega ...</option>
+            @foreach (var wherehouse in wherehouseEntities)
+            {
+                <option value="@wherehouse.WherehouseId">@wherehouse.</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group">
+        <label for="products">Producto:</label>
+        <InputSelect id="products" @bind-Value="oStorage.ProductId" class="form-control">
+            <option value="">Seleccionar producto ...</option>
+            @foreach (var product in productEntities)
+            {
+                <option value="@product.ProductId">@product.ProductName</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group">
+        <input type="button" value="Agregar Producto" @onclick="SaveStorage" class="form-control btn btn-dark" />
+    </div>
+</EditForm>
+@code {
+    StorageEntity oStorage = new StorageEntity();
+
+    List<WherehouseEntity> wherehouseEntities = new List<WherehouseEntity>();
+    List<ProductEntity> productEntities = new List<ProductEntity>();
+
+
+    protected override async Task  OnInitializedAsync()
+    {
+        wherehouseEntities = B_WhereHouse.Get();
+
+        productEntities = B_Product.Get();
+    }
+
+    private void SaveStorage()
+    {
+
+        oStorage.LastUpdate = DateTime.Now;
+        oStorage.StorageId = Guid.NewGuid().ToString();
+
+        B_Storage.Create(oStorage);
+
+    
+    
+    }
+}
