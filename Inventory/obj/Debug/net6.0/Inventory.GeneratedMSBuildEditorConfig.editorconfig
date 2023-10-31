@@ -104,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcVXBkYXRlUHJvZHVjdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/Storage/RegisterStoragePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZVxSZWdpc3RlclN0b3JhZ2VQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/usuario/Desktop/Curso_Blazor/Inventory/Pages/WhereHouse/CreateWhereHousePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2hlcmVIb3VzZVxDcmVhdGVXaGVyZUhvdXNlUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

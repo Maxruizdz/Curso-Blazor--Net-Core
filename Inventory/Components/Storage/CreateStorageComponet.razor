@@ -9,7 +9,7 @@
             <option value="">Seleccionar bodega ...</option>
             @foreach (var wherehouse in wherehouseEntities)
             {
-                <option value="@wherehouse.WherehouseId">@wherehouse.</option>
+                <option value="@wherehouse.WherehouseId">@wherehouse.WherehouseName</option>
             }
         </InputSelect>
     </div>
@@ -27,9 +27,18 @@
         <input type="button" value="Agregar Producto" @onclick="SaveStorage" class="form-control btn btn-dark" />
     </div>
 </EditForm>
+<hr />
+<div class="h3 text-center">
+    @message
+</div>
+<hr />
+
+
+
+
 @code {
     StorageEntity oStorage = new StorageEntity();
-
+    string message = "";
     List<WherehouseEntity> wherehouseEntities = new List<WherehouseEntity>();
     List<ProductEntity> productEntities = new List<ProductEntity>();
 
@@ -44,12 +53,24 @@
     private void SaveStorage()
     {
 
-        oStorage.LastUpdate = DateTime.Now;
-        oStorage.StorageId = Guid.NewGuid().ToString();
+        oStorage.StorageId = $"{oStorage.ProductId}-{oStorage.WherehouseId}";
 
-        B_Storage.Create(oStorage);
+        if (!B_Storage.get_verified_dupli(oStorage.StorageId))
+        {
+            oStorage.LastUpdate = DateTime.Now;
+            
 
-    
+            B_Storage.Create(oStorage);
+
+            message = "Se ha Almacenado el producto exitosamente";
+        }
+        else
+        {
+            message = "El producto ya se encuentra almecenado!!!";
+
+        
+        }
+
     
     }
 }

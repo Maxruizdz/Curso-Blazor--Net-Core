@@ -1,6 +1,8 @@
 ﻿using Inventory.DataAccess;
 using Inventory.Entity;
 using Inventory.Entity.obj;
+using Microsoft.Identity.Client.Extensions.Msal;
+using System.Xml.Serialization;
 
 namespace Inventory.Business
 {
@@ -20,7 +22,24 @@ namespace Inventory.Business
 
 
         }
+        public static Boolean get_verified_dupli(string id_storage) {
 
+            using (var db = new InventaryContext())
+            {
+
+                var product = db.storageEntities.Where(x => x.StorageId== id_storage).ToList();
+              
+
+                   
+                   var x=   product.Any();
+                
+
+                    return x;
+               
+
+
+            }
+        }
 
         public static void Create(StorageEntity storage)
         {
@@ -29,10 +48,10 @@ namespace Inventory.Business
             {
 
 
-
-                db.storageEntities.Add(storage);
-                db.SaveChanges();
-
+                
+                    db.storageEntities.Add(storage);
+                    db.SaveChanges();
+                
             }
 
         }
