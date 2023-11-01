@@ -55,7 +55,11 @@
         <input type="button" value="@Button_value" @onclick="save" class="form-control btn btn-warning" />
     
 </EditForm>
-
+<hr />
+<div class="h3 text-center">
+    @message
+</div>
+<hr />
 
 
 
@@ -67,7 +71,12 @@
 
     List<WherehouseEntity> wherehouseEntities = new List<WherehouseEntity>();
     List<StorageEntity> storages = new List<StorageEntity>();
+    StorageEntity storage = new StorageEntity();
+    ProductEntity product = new ProductEntity();
     string Button_value => inout.IsInput ? "Registrar Entrada" : "Registrar salida";
+
+
+    string message = "";
     protected override async Task OnInitializedAsync()
     {
         wherehouseEntities = B_WhereHouse.Get();
@@ -84,5 +93,76 @@
 
 
     }
-    private void save() { }
+    private void save()
+    {
+
+        storage = storages.FirstOrDefault(p => p.StorageId == inout.StorageId);
+
+        product = storage.Product;
+
+        if (inout.IsInput)
+        {
+            storage.PartialQuantity = storage.PartialQuantity + inout.Quantity;
+
+            product.TotalQuality = product.TotalQuality + inout.Quantity;
+
+
+            B_Storage.Update(storage);
+            B_Product.Update(product);
+
+            message = $"El producto: {product.ProductName} ha sido actualizado exitosamente!!";
+        }
+        else
+        {
+            if (IsBiggerThanzero(storage.PartialQuantity, inout.Quantity))
+            {
+
+
+
+                storage.PartialQuantity = storage.PartialQuantity - inout.Quantity;
+
+                product.TotalQuality = product.TotalQuality - inout.Quantity;
+
+
+                B_Storage.Update(storage);
+                B_Product.Update(product);
+                message = $"El producto: {product.ProductName} ha sido actualizado exitosamente!!";
+            }
+            else
+            {
+                
+            
+            
+                message = $"No existe la cantidad sufiente en bodega para el producto: {product.ProductName} ";
+            }
+
+            
+            }
+
+
+
+        } 
+
+    
+
+    private bool IsBiggerThanzero(int storage_quantity, int inout_Quantity)
+    {
+        if (storage_quantity >= inout_Quantity)
+        {
+
+
+            return true;
+
+
+
+
+    } else
+        
+ return false;
+        
+
+    
+    
+    
+    }
 }
