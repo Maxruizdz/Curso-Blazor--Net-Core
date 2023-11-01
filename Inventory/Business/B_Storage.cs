@@ -1,6 +1,7 @@
 ﻿using Inventory.DataAccess;
 using Inventory.Entity;
 using Inventory.Entity.obj;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client.Extensions.Msal;
 using System.Xml.Serialization;
 
@@ -39,6 +40,19 @@ namespace Inventory.Business
 
 
             }
+        }
+
+        public static List<StorageEntity> GetStorages_wherehouse(string id_wherehouse) {
+
+
+
+            using (var db = new InventaryContext()) {
+            
+            
+            
+            return db.storageEntities.Where(p=> p.WherehouseId == id_wherehouse).Include(p=>p.wherehouse ).Include(p=> p.Product).ToList();
+            }
+        
         }
 
         public static void Create(StorageEntity storage)
